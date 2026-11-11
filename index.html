@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Student Information Portal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <header>
+            <h1>Masinde Muliro University of Science and Technology</h1>
+            <p>Welcome to masinde muliro University Student Information Portal</p>
+
+         </header>
+        <!-- navagigation bar -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#registration">Student Registration</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+         <main>
+            <!-- question 2a About section -->
+            <section id="about">
+                <h2>About Masinde Muliro University</h2>
+                <p>The student information portal is designed to help students register, view  their academic information, check their programs and easily access  university services online  in one place.</p>
+                <!-- Q2 b ) Unordered List -->
+                 <h3>Academic Programs Offered</h3>
+                 <ul>
+                     <li> Bachelor of Science in Computer Science</li>
+                     <li> Bachelor of Science in Engineering</li>
+                     <li> Bachelor of Business Administration</li>
+                     <li> Bachelor of Science in Health Sciences</li>
+                 </ul>
+            </section>
+
+            <!-- Q2 c) Table -->
+             <section>
+                <h2>Student Information</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Student Name</th>
+                            <th>Registration Number</th>
+                            <th>Programme</th>
+                            <th>Year of Study</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Vulimo Emmanuel</td>
+                            <td>COM/B/01-00157/2025</td>
+                            <td>Bachelor of Science in Computer Science</td>
+                            <td>Second year</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Irene Suri</td>
+                            <td>COM/B/01- 00184/2025</td>
+                            <td>Bachelor of Computer science </td>
+                            <td>second Year </td>
+                        </tr>
+                           <tr>
+                            <td>3</td>
+                            <td>Denis Opiyo</td>
+                            <td>COM/B/01- 00188/2025</td>
+                            <td>Bachelor of Computer science </td>
+                            <td>second Year </td>
+                        </tr>
+                    </tbody>
+                </table>
+             </section>
+             <!-- Q3: Registration Form -->
+             <section id="registration">
+                <h2>Student Registration Form</h2>
+                <form id="registrationForm">
+                    <! --a  full Name -->
+                    <label >Full Name:</label><br>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name"><br><br>
+                    
+                    <! --b  Registration Number -->
+                    <label >Registration Number:</label><br>
+                    <input type="text" id="registrationNumber"  required placeholder="Enter your registration number"><br><br>
+
+                    <! --c  Email Address -->
+                    <label >Email Address:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address"><br><br>
+
+                    <! --d  Gender -->
+                    <label >Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male" required> Male
+                    <input type="radio" id="female" name="gender" value="female" required> Female
+                    <input type="radio" id="other" name="gender" value="other" required> Other
+
+       <! -- e  Programme -->
+                    <label >Programme:</label><br>
+                    <select id="programme" name="programme" required>
+                        <option value="">Select your programme</option>
+                        <option value="computerScience">Bachelor of Science in Computer Science</option>
+                        <option value="engineering">Bachelor of Science in Engineering</option>
+                        <option value="businessAdministration">Bachelor of Business Administration</option>
+                        <option value="healthSciences">Bachelor of Science in Health Sciences</option>
+                    </select><br><br>
+
+                 
+
+                    <! --f  Submit Button -->
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </form>
+                            <!-- Q6 c) Where result will show -->
+            <p id="displayArea"></p>
+            <p id="successMessage"></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@mmust.ac.ke | Phone: +254 700 000 000</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MMUST. All rights reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

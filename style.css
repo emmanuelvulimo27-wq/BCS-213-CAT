@@ -1,0 +1,255 @@
+/* Q4 a) General Page Styling - Background, Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #002855, #004080);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+    color: #ffd700;
+    font-style: italic;
+}
+
+/* Q4 b) Navigation - Horizontal + Hover Effect */
+nav {
+    background-color: #002855;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffd700;
+    color: #002855;
+    border-radius: 5px;
+}
+
+/* Q4 d) Flexbox Layout for Page Content */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #004080;
+    border-bottom: 3px solid #ffd700;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #002855;
+    margin: 15px 0 10px;
+}
+
+section ul {
+    margin-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 6px;
+}
+
+/* Q4 c) Table - Borders, Padding, Spacing */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f7ff;
+}
+
+tbody tr:hover {
+    background-color: #fff3cd;
+}
+
+/* Registration Form Styling */
+form label {
+    font-weight: bold;
+    color: #002855;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus {
+    border-color: #004080;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,64,128,0.3);
+}
+
+form input[type="radio"] {
+    margin: 10px 5px 15px 15px;
+    accent-color: #004080;
+}
+
+form input[type="submit"] {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #002855;
+}
+
+form input[type="reset"] {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="reset"]:hover {
+    background-color: #bbb;
+}
+
+#displayArea {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #004080;
+}
+
+#successMessage {
+    margin-top: 5px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Contact + Footer */
+#contact {
+    text-align: center;
+}
+
+footer {
+    background-color: #002855;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+/* Q4 e) Media Query - Small Screens */
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    nav ul li a {
+        padding: 12px;
+    }
+
+    main {
+        padding: 0 10px;
+        margin: 15px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    table {
+        font-size: 13px;
+        display: block;
+        overflow-x: auto;
+    }
+
+    form input[type="submit"],
+    form input[type="reset"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
